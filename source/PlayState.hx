@@ -267,6 +267,10 @@ class PlayState extends MusicBeatState
 	// Less laggy controls
 	private var keysArray:Array<Dynamic>;
 
+	var textBG:FlxSprite;
+	var text:FlxText;
+	// fun.
+
 	override public function create()
 	{
 		#if MODS_ALLOWED
@@ -1020,6 +1024,21 @@ class PlayState extends MusicBeatState
 			botplayTxt.y = timeBarBG.y - 78;
 		}
 
+		textBG = new FlxSprite(0, FlxG.height - 26).makeGraphic(FlxG.width, 26, 0xFF000000);
+		textBG.alpha = 0.6;
+		add(textBG);
+		// 18
+		text = new FlxText(textBG.x, textBG.y + 4, FlxG.width, 
+			SONG.song
+			+ " - "
+			+ CoolUtil.difficultyString()
+			+ " - Psych Engine v"
+			+ MainMenuState.psychEngineVersion
+			+ ", someFNFShit", 18); // fucking copied from sus colors mod because lazy to go in freeplaystate again
+		text.setFormat(Paths.font("vcr.ttf"), 18, FlxColor.WHITE, RIGHT);
+		text.scrollFactor.set();
+		add(text);
+
 		strumLineNotes.cameras = [camHUD];
 		grpNoteSplashes.cameras = [camHUD];
 		notes.cameras = [camHUD];
@@ -1033,6 +1052,9 @@ class PlayState extends MusicBeatState
 		timeBarBG.cameras = [camHUD];
 		timeTxt.cameras = [camHUD];
 		doof.cameras = [camHUD];
+		textBG.cameras = [camHUD];
+		text.cameras = [camHUD];
+		// camera
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;

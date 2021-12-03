@@ -1,0 +1,39 @@
+{
+	"storyName": "",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "daveweek",
+	"startUnlocked": false,
+	"hideStoryMode": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"Furiosity",
+			"3DDAVE",
+			[
+				249,
+				180,
+				207
+			]
+		],
+		[
+			"Bonus-Song",
+			"dave",
+			[
+				0,
+				93,
+				255
+			]
+		]
+	],
+	"weekName": "davebonussongs"
+}

@@ -1,0 +1,48 @@
+{
+	"songs": [
+		[
+			"Blocked",
+			"bambi",
+			[
+				12,
+				181,
+				0
+			]
+		],
+		[
+			"Corn-Theft",
+			"bambi",
+			[
+				12,
+				181,
+				0
+			]
+		],
+		[
+			"Maze",
+			"bambi",
+			[
+				12,
+				181,
+				0
+			]
+		]
+	],
+	"hideFreeplay": false,
+	"weekBackground": "bambi",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "MR. Bambi's Fun Corn Maze!",
+	"weekName": "bambiweek",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": false,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
